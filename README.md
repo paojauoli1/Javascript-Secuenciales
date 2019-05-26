@@ -1,0 +1,2 @@
+# Javascript-Secuenciales
+Exercises Javascript
