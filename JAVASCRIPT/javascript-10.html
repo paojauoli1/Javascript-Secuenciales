@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 10 javascript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var parcial1=parseFloat(prompt("Introduce la nota del primer examen parcial: "));
+            var parcial2=parseFloat(prompt("Introduce la nota del segundo examen parcial: "));            
+            var parcial3=parseFloat(prompt("Introduce la nota del tercer examen parcial: "));
+            var mediafinal=((parcial1+parcial2+parcial3)/3)*0.55
+            var final=prompt("Introduce la nota del examen final: ");
+            var porcentajefinal=final*0.3;
+            var trabajofinal=parseFloat(prompt("Introduce la nota del trabajo final: "));
+            var porcentajetrabajofinal=trabajofinal*0.15;
+            var sumanotas=parseInt(mediafinal+porcentajefinal+porcentajetrabajofinal);
+
+            $("#outputMensaje").html("La nota final del curso es: " + sumanotas);
+            
+        });
+
+    
+    </script>
+</head>
+<body>
+    <p id="outputMensaje"></p>
+</body>
+</html>

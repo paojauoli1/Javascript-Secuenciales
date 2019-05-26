@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 4 javascript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    var numero1=parseInt(prompt("Introduce el número: "));
+    var numero2=parseInt(prompt("Introduce el número: "));
+    
+    var suma=numero1 + numero2;
+    var resta=numero1 - numero2;
+    var division=numero1 / numero2;
+    var multiplicacion=numero1 * numero2;
+    var mensaje="La suma es: " + suma;
+    var mensaje2="La resta es: " + resta;
+    var mensaje3="La division es: " + division;
+    var mensaje4="La multiplicacion es: " + multiplicacion;
+    $("#outputMensaje").html(mensaje);
+    $("#outputMensaje2").html(mensaje2);
+    $("#outputMensaje3").html(mensaje3);
+    $("#outputMensaje4").html(mensaje4);
+    });
+
+</script>
+
+</head>
+<body>
+    <p id="outputMensaje"></p>
+    <p id="outputMensaje2"></p>
+    <p id="outputMensaje3"></p>
+    <p id="outputMensaje4"></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 9 javascript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var valorcompra=parseFloat(prompt("Introduce el precio de la compra: "));
+            var descuento=valorcompra*0.15;
+            var preciototal=parseFloat(valorcompra-
+            
+            descuento);
+            var mensaje="El precio final de la compra será de : " +preciototal+ "€";
+            $("#outputMensaje").html(mensaje);
+        })
+    
+    </script>
+</head>
+<body>
+    <p id="outputMensaje"></p>
+</body>
+</html>

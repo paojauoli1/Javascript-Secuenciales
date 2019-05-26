@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 7 javascript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#btn-convert").click(function(){
+    var minutes=$("#inp-minutes").val();
+    var resto_minutos=minutes % 60;
+    var horas=(minutes - resto_minutos)/60;
+    var message= "Son " + horas + 
+                    " horas y " + resto_minutos + 
+                    " minutos";
+    $("#output").html(message);
+    });
+});
+</script>
+
+
+
+</head>
+<body>
+<p>Número de minutos:</p>
+<input id="inp-minutes" type="text">
+<button id="btn-convert">Convertir</button>
+<hr/>
+<h2>Esos minutos son:</h2>
+<p id="output"></p>
+</body>
+</html>

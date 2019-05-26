@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2 javascript</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+var base= prompt("Escribe la base: ");
+var altura=prompt("Escribe la altura: ");
+var perimetro=2*base+2*altura;
+var area=base*altura;
+
+
+$("#outputArea").html(area);
+$("#outputPerimetro").html(perimetro);
+});
+
+</script>
+
+
+</head>
+<body>
+
+
+<h2>El área es:</h2>
+<p id="outputArea"></p>    
+
+<h2>El perimetro es:</h2>
+<p id="outputPerimetro"></p>
+
+
+</body>
+</html>

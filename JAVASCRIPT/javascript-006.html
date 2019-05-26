@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Ejercicio 6 javascript</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    var numero=prompt("Inserte número: ");
+    numero=parseInt(numero);
+    var numero2=prompt("Inserte número: ");
+    numero2=parseInt(numero2);
+    var numero3=prompt("Inserte número: ");
+    numero3=parseInt(numero3);
+    var suma=numero+numero2+numero3;
+    var media=suma/3;
+    var mensaje="La media de estos 3 números es: "+media;
+    $("#outputMensaje").html(mensaje);
+    });
+</script>
+</head>
+<body>
+    <p id="outputMensaje"></p>
+</body>
+</html>

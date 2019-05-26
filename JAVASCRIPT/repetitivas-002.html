@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repetitivas 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var numeroADescubrir =parseInt(Math.random() * 100);
+            var intentos = 0;
+            var hasGanado=false;
+            while(intentos<10 && hasGanado==false){
+                var numeroEscrito=prompt("Escribe un numero (intento " + intentos +"):");
+                
+                if(numeroEscrito<numeroADescubrir){
+                    alert("Has escrito un numero menor");
+                    intentos++;
+                }
+                else if(numeroEscrito>numeroADescubrir){
+                    alert("Has escrito un numero mayor");
+                    intentos++;
+                }
+                else{
+                    ("¡Has acertado!");
+                    hasGanado=true;
+                }
+            }           
+            if (hasGanado){
+                $("#output").html("FIN: has acertado el numero: " + numeroADescubrir);
+            }
+            else{
+                $("#output").html("FIN: has perdido. Has superado el numero de intentos");
+            }
+        });
+    
+    </script>
+
+
+</head>
+<body>
+    <p id="output"></p>
+   
+</body>
+</html>
